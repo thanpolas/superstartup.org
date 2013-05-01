@@ -66,16 +66,14 @@ html(lang="en")
         .container
           a.brand(href="/") Welcome
           ul.nav
-            each doc in getCollection('pages').toJSON()
-              - clazz = (document.url === doc.url) ? 'active' : null
-              li(typeof="sioc:Page", about=doc.url, class=clazz)
-                a(href=doc.url, property="dc:title")= doc.title
+            - clazz = (document.url === '/api/index.html') ? 'active' : null
+            li(class=clazz)
+              a(href="/api/") API
     .container
       section#content.content!= content
       hr
       footer
-        div= site.copyright
-        div(style="font-style:italic; font-size: 12px") This website was last updated at #{site.date}
+        div footer
 
     // Scripts
     != scripts.toHTML()

@@ -1,0 +1,2 @@
+$('pre').addClass('prettyprint');
+//prettyPrint();

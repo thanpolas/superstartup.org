@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+section#docs.docs
+  header.row-fluid
+    div.span10.offset2
+      h1= document.title
+
+  div.row-fluid
+    div.span2
+
+      include inc/apimenu
+
+    div.span10
+      .page-content!= content
