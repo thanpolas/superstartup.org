@@ -6,3 +6,7 @@ app/components
 closure-library
 app/jsc
 npm-debug.log
+out/
+.idea/
+.DS_Store
+*.iml
